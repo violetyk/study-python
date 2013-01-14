@@ -1,4 +1,5 @@
 # coding:utf-8
+
 # こう宣言しないとSyntaxError: Non-ASCII characterがでちゃう
 
 # Hello, Python!
@@ -8,6 +9,9 @@ print '''line1
 line2
 line3
 '''
+
+print u"aaa\nbbb" # unicode文字列
+print r"aaa\nbbb" # raw文字列
 
 
 # 変数に型を付けなくていい。jを付けると虚数
@@ -81,8 +85,7 @@ print 'abcd'.find('cd')
 print 'abcd'.find('ef')
 
 
-# リスト []：他の言語の配列。何でも入る。
-print '----------'
+print '### リスト []：他の言語の配列。何でも入る。'
 list1 = []
 list2 = list()
 list3 = [0,1,2]
